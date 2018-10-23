@@ -10,7 +10,7 @@ import Grid from '@material-ui/core/Grid'
 
 const Restaurant = (props) =>{
   return(
-    <Grid item xs={4}>
+    <Grid item xs={3}>
       <Card>
         <CardActionArea>
           <CardMedia
