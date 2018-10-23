@@ -1,0 +1,56 @@
+{
+  "name": "isomorphic-meshi-web",
+  "version": "1.0.0",
+  "description": "web client for gurunavi api wrapper",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "test": "npm run deleteCoverage && npm run karma",
+    "test watch": "npm run deleteCoverage && npm run karma watch",
+    "karma": "karma start --single-run",
+    "karma watch": "karma start --single-run --auto-watch",
+    "deleteCoverage": "rm -rf coverage/",
+    "clean": "rm -rf node_modules/ && npm cache clean",
+    "server": "webpack-dev-server -d"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SerizawaNazuna/Isomorphic-Meshi-Web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SerizawaNazuna/Isomorphic-Meshi-Web/issues"
+  },
+  "homepage": "https://github.com/SerizawaNazuna/Isomorphic-Meshi-Web#readme",
+  "dependencies": {
+    "@material-ui/core": "^3.2.2",
+    "axios": "^0.18.0",
+    "babel": "^6.23.0",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "rebass": "^3.0.0-9"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.6.0",
+    "enzyme-async-helpers": "^0.9.1",
+    "jasmine": "^3.2.0",
+    "karma": "^3.0.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-coverage": "^1.1.2",
+    "karma-jasmine": "^1.1.2",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-spec-reporter": "0.0.32",
+    "karma-webpack": "^3.0.5",
+    "react-test-utils": "0.0.1",
+    "webpack": "^4.21.0",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.9"
+  }
+}
